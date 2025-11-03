@@ -1,0 +1,37 @@
+---
+description: "Shadcn UI usage rules styled for a cinematic, premium, emotional aesthetic"
+patterns: "*.tsx"
+---
+
+# 🎨 Shadcn UI Style Guide  
+*A Cinematic, Calm & Premium UI Direction*
+
+This project uses **@shadcn/ui** as the core UI library. Components should feel cinematic, soft, elegant, and emotionally expressive — inspired by visuals like an explorer in a glowing flower field: calm gradients, depth through blur, subtle motion, and refined typography.
+
+---
+
+## 🌌 Visual Philosophy
+
+- Soft, clean, minimalist interfaces  
+- Ambient depth using **blur + opacity** instead of heavy shadows  
+- Generous whitespace and breathable layouts  
+- Rounded edges (`rounded-lg` to `rounded-2xl`) for a gentle feel  
+- Color accents should be muted, pastel, or glowing — not harsh  
+- Typography should feel premium, calm, and expressive
+
+Think: **cinematic | reflective | emotional | creative**
+
+---
+
+## 📁 Component Location
+
+Shadcn components live here:
+
+src/components/ui
+
+
+Use alias-based imports:
+
+```tsx
+import { Button } from "@/components/ui/button"
+import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/components/ui/card"

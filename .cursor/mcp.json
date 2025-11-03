@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "Abstract": {
+      "name": "Abstract",
+      "url": "https://docs.abs.xyz/mcp",
+      "headers": {}
+    },
+    "github.com/upstash/context7-mcp": {
+      "command": "cmd",
+      "args": ["/c", "npx", "-y", "@upstash/context7-mcp"],
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}
