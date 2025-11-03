@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import Link from "next/link";
 
 export function HeroSection() {
   return (
@@ -14,7 +15,9 @@ export function HeroSection() {
         </p>
 
         <div className="flex justify-center gap-4 mt-5">
-          <Button className="bg-gradient-to-r from-violet-500 to-violet-400 text-white hover:from-violet-600 hover:to-violet-500 shadow-lg hover:shadow-xl transition-all duration-300 rounded-full" style={{ fontFamily: 'Inter, sans-serif', fontSize: '16px', fontWeight: '400', width: '157px', height: '48px' }}>Launch App</Button>
+          <Link href="https://app.waddlejob.xyz" target="_blank" rel="noopener noreferrer">
+            <Button className="bg-gradient-to-r from-violet-500 to-violet-400 text-white hover:from-violet-600 hover:to-violet-500 shadow-lg hover:shadow-xl transition-all duration-300 rounded-full" style={{ fontFamily: 'Inter, sans-serif', fontSize: '16px', fontWeight: '400', width: '157px', height: '48px' }}>Launch App</Button>
+          </Link>
         </div>
       </CardContent>
     </Card>
