@@ -166,3 +166,43 @@ body {
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
+
+/* Mobile-specific optimizations */
+@media (max-width: 768px) {
+  /* Improve background image positioning on mobile */
+  .bg-cover.bg-bottom.bg-no-repeat {
+    background-position: center bottom;
+    background-size: cover;
+  }
+  
+  /* Ensure proper scrolling on mobile */
+  body {
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* Optimize touch targets for mobile */
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Improve text readability on mobile */
+  body {
+    line-height: 1.6;
+  }
+  
+  /* Prevent horizontal scroll on mobile */
+  * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* Tablet-specific adjustments */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Adjust spacing for tablets */
+  .main-content {
+    padding: 0 2rem;
+  }
+}
