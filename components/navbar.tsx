@@ -59,12 +59,16 @@ export default function Navbar() {
         {/* Desktop Layout - Original positioning */}
         <div className="hidden md:flex items-center justify-center relative">
           <div className="absolute left-0 flex items-center">
-            <h1 
-              className="text-xl font-light text-white/90 ml-20 cursor-pointer hover:text-white transition-colors duration-300"
-              onClick={showHome}
-            >
-              WaddleJob
-            </h1>
+            <div className="flex items-center ml-20 cursor-pointer hover:opacity-80 transition-opacity duration-300" onClick={showHome}>
+              <img 
+                src="/logo-white.svg" 
+                alt="WaddleJob" 
+                className="h-12 w-auto mr-3"
+              />
+              <h1 className="text-xl font-light text-white/90 hover:text-white transition-colors duration-300">
+                WaddleJob
+              </h1>
+            </div>
           </div>
           <div className="flex items-center gap-2">
             <Button 
@@ -116,12 +120,16 @@ export default function Navbar() {
           <div className="flex items-center justify-between relative">
             {/* Logo */}
             <div className="flex items-center">
-              <h1 
-                className="text-lg font-light text-white/90 cursor-pointer hover:text-white transition-colors duration-300"
-                onClick={showHome}
-              >
-                WaddleJob
-              </h1>
+              <div className="flex items-center cursor-pointer hover:opacity-80 transition-opacity duration-300" onClick={showHome}>
+                <img 
+                  src="/logo-white.svg" 
+                  alt="WaddleJob" 
+                  className="h-10 w-auto mr-2"
+                />
+                <h1 className="text-lg font-light text-white/90 hover:text-white transition-colors duration-300">
+                  WaddleJob
+                </h1>
+              </div>
             </div>
 
             {/* Mobile Menu Button */}

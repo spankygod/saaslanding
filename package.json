@@ -1,6 +1,7 @@
 {
-  "name": "saaslanding",
+  "name": "waddlejob-landing",
   "version": "0.1.0",
+  "description": "WaddleJob - Jobs for You. Created for makers chasing meaningful work.",
   "private": true,
   "scripts": {
     "dev": "next dev",
